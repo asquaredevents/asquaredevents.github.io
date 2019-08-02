@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>  A² Event Photography </title>
+      <link rel = "stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Amiri|Cinzel|Grenze&display=swap" rel="stylesheet">
+      <script src="Javascript/js/jquery-3.4.1.min.js"></script>
+      <script src="Javascript/infinite-scroll.pkgd.min.js"></script>
+      <script>
+        $('.container').infiniteScroll({
+          path: '.pagination__next',
+          append: '.post',
+          history: false,
+        });
+      </script>
+    </head>
+    <body>
+      <div class = "page-wrap">
+            <!-- this is where my wrapper starts -->
+        <header>
+          <a href="index.html">
+            <img class = "logo" img src = 'images/logo.jpg'>
+          </a>
+          <h1> Recent Works </h1>
+
+          <nav class="links">
+            <a href="index.html"> Home </a>
+            <a href="about.html"> About </a>
+            <a href="gallery.html"> Gallery </a>
+            <a href="contact.html"> Contact </a>
+          </nav>
+
+        </header>
+
+        <main role="main">
+            <div class="gallery">
+              <div class="row">
+                <div class="column">
+                  <img src="images/gallery/octopus.jpg">
+                  <img src="images/gallery/lightflame.jpg">
+                  <img src="images/gallery/dancers.jpg">
+                  <img src="images/gallery/centerpiece.jpg">
+                </div>
+                <div class="column">
+                  <img src="images/gallery/leatherjacket.jpg">
+                  <img src="images/gallery/redjacket.jpg">
+                  <img src="images/gallery/redbag.jpg">
+                  <img src="images/gallery/1.jpg">
+                  <img src="images/gallery/2.jpg">
+                  <img src="images/gallery/3.jpg">
+                  <img src="images/gallery/4.jpg">
+                </div>
+                <div class="column">
+                  <img src="images/gallery/5.jpg">
+                  <img src="images/gallery/7.jpg">
+                  <img src="images/gallery/8.jpg">
+                  <img src="images/gallery/9.jpg">
+                  <img src="images/gallery/10.jpg">
+                  <img src="images/gallery/11.jpg">
+                </div>
+              </div>
+            </div>
+          <!-- The expanding image container -->
+          <div class="container">
+  <!-- Close the image -->
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+          <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+          <div id="imgtext"></div>
+          </div>
+
+
+
+        </main>
+
+        <!-- Add about me paragraphs -->
+      </div>
+          <!-- This is where my wrapper ends -->
+        <div class = "footer">
+          <footer>
+
+            <p>&copy; Shaji Soori 2019 </p>
+
+
+          </footer>
+        </div>
+      </body>
+    </html>
+  <!-- This is my first comment. -->

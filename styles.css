@@ -1,0 +1,305 @@
+html {
+  height:100%;
+  position:relative;
+  scroll-behavior: smooth;
+  pointer-events: auto;
+}
+
+body {
+  background-color: ##FFF5EE;
+  padding: 0;
+  margin: auto;
+  font-family: 'Cinzel', serif;
+  font-weight: lighter;
+  text-transform: none;
+  color:#363536;
+  font-size: 110%;
+  height:100%;
+}
+a {
+  color: #728D9A;
+  text-decoration: none;
+}
+
+header h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: lighter;
+  text-transform:capitalize;
+  font-size: 115%;
+  color: #969BC2;
+  margin: auto;
+}
+header, nav, main {
+  padding: 20px 30px;
+}
+h1, h2 {
+  margin: 0;
+}
+
+img {
+    width: 50%;
+    float: none;
+}
+
+
+.aboutimg {
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  justify-content: left;
+  outline: none;
+  overflow: hidden;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.profile-img{
+  width: 50%;
+  height: 50%;
+  line-height: 0;
+  position:static;
+  display:block;
+  margin:0 auto;
+  margin-left:-5px;
+  padding-left: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+.aboutmetxt {
+  clear:both;
+  box-sizing: border-box;
+  float: right;
+  display: inline-block;
+  position: static;
+  overflow:hidden;
+  margin: 0 auto;
+  width: 60%;
+  padding: 40px;
+}
+
+.aboutme{
+  text-transform: none;
+  white-space: pre-wrap;
+  margin-bottom: 0;
+  margin-top: 0;
+  word-wrap: break-word;
+  padding-right: 20px;
+  margin-right: 10px;
+  line-height: 30px;
+}
+
+nav a {
+  padding: 5px;
+  text-align: center;
+}
+
+.links {
+  font-size: 115%;
+}
+a:hover {
+  color: #A4C6BE;
+  text-decoration: none;
+}
+
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -55px; /* must be the same height as footer */
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: ##FFF5EE;
+  text-align: center;
+  font-size: 110%;
+  font-family: 'Grenze', serif;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #363536;
+}
+
+.logo {
+  width: 10%;
+  float: left;
+}
+header {
+  font-family: 'Grenze', serif;
+  font-weight: lighter;
+  text-transform:capitalize;
+  font-size: 120%;
+  color: #969BC2;
+  background-color: ##FFFAFA;
+}
+
+.gallery {
+  margin:0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  float: right;
+  grid-gap: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.homebackground {
+  height: 40%;
+  width: 40%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+.homenav {
+  float: right;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Grenze', serif;
+}
+.homehead {
+  font-size: 80%
+
+}
+
+
+.homenav a:hover {
+  color: #A4C6BE;
+  text-decoration: none;
+}
+
+.contactcontainer {
+  box-sizing: border-box;
+  display: block;
+  line-height: 28.5px;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  padding: 30px 350px;
+  margin: 0 auto;
+  text-indent: 0;
+  background-color: #E6BCBC;
+  margin-bottom: 0;
+}
+form {
+  display: block;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  padding: 40px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin top: 50px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.form-control {
+  width:600px;
+  background: transparent;
+  border: none;
+  margin-bottom: 16px;
+  border-bottom: 1px solid;
+  font-size: 18px;
+  display: block;
+}
+.contactdescript {
+  font-size: 110%;
+  text-indent: 2%;
+}
+button {
+  display: flex;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  overflow: visible;
+  padding: 0 20px;
+  border-radius: 2px;
+  line-height: 1.2px;
+  margin:10px;
+  margin-left: 0;
+  height: 40px;
+  width: 130px;
+  text-shadow: none;
+  outline: none !important;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #969BC2;
+}
+button:hover {
+  cursor:pointer;
+  color: #A4C6BE;
+}
